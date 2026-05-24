@@ -12,7 +12,7 @@
 - 🌙 Dark mode default
 - 📱 Fully responsive
 - 🖱️ Skills carousel (auto-scroll desktop, drag mobile)
-- 📁 9 projects with GitHub links
+- 📁 Projects
 - 🏆 Extracurriculars timeline
 - 📞 Copy phone/email to clipboard
 - 📄 Resume download
@@ -21,4 +21,4 @@
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
