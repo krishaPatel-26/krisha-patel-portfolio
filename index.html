@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Krisha Patel | Software Engineering Portfolio</title>
+    <meta name="description" content="Software Engineering student at McMaster University showcasing projects, skills, and experience">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Krisha Patel</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#extracurriculars" class="nav-link" data-section="extracurriculars">Extracurriculars</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="theme-selector-container">
+                <button class="theme-selector-btn" id="themeSelectorBtn">
+                    <svg class="palette-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a10 10 0 0 0 0 20 10 10 0 0 0 0-20z"/>
+                        <path d="M12 2a10 10 0 0 1 0 20"/>
+                        <circle cx="7.5" cy="9.5" r="1.5" fill="currentColor" stroke="none"/>
+                        <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor" stroke="none"/>
+                        <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none"/>
+                        <circle cx="9" cy="14" r="1.5" fill="currentColor" stroke="none"/>
+                        <circle cx="15" cy="14" r="1.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                </button>
+                <div class="theme-dropdown" id="themeDropdown">
+                    <button class="theme-option" data-theme="default"><span class="theme-color-preview default"></span>Blue</button>
+                    <button class="theme-option" data-theme="purple"><span class="theme-color-preview purple"></span>Purple</button>
+                    <button class="theme-option" data-theme="green"><span class="theme-color-preview green"></span>Green</button>
+                    <button class="theme-option" data-theme="orange"><span class="theme-color-preview orange"></span>Orange</button>
+                    <button class="theme-option" data-theme="pink"><span class="theme-color-preview pink"></span>Pink</button>
+                    <button class="theme-option" data-theme="teal"><span class="theme-color-preview teal"></span>Teal</button>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">Projects</a></li>
+            <li><a href="#extracurriculars" class="mobile-nav-link" onclick="closeMobileMenu()">Extracurriculars</a></li>
+            <li><a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">Skills</a></li>
+            <li><a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>Krisha Patel</h1>
+                    <p class="hero-subtitle"><strong>SOFTWARE ENGINEERING STUDENT</strong></p>
+                    <p class="hero-description">
+                        I am a Software Engineering student at McMaster University, with a passion for technology, design, and problem-solving. 
+                        This website is a place where I showcase my projects, share ideas, and document my journey as I continue to learn 
+                        and grow in the field of engineering. Whether you're here to explore my work or connect with me, I hope you find 
+                        something inspiring and valuable.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-glow"></div>
+                    <div class="profile-picture">
+                        <img src="images/ProfilePic.jpg" alt="Krisha Patel" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        My name is <strong>Krisha Patel</strong>, and I am a Software Engineering student at 
+                        <strong>McMaster University</strong>. I possess a strong passion for utilizing technology 
+                        to address real-world challenges, and I enjoy examining the convergence of software 
+                        development and design principles. I am committed to engaging in complex projects, 
+                        acquiring new skills, and discovering innovative methods to create a meaningful impact.
+                    </p>
+                    <div class="mission-vision">
+                        <div class="mission-card">
+                            <h3>🎯 Mission</h3>
+                            <p>My mission is to harness technology and creativity to develop innovative, practical, and user-centered solutions that tackle real-world challenges. I aim to blend technical expertise, strategic thinking, and thoughtful design to create projects that have a meaningful impact.</p>
+                        </div>
+                        <div class="vision-card">
+                            <h3>👁️ Vision</h3>
+                            <p>My vision is to be at the forefront of technology and innovation, continuously pushing the boundaries of what software can accomplish. I aspire to combine creativity with technical expertise to develop solutions that inspire progress, enhance user experiences, and create a positive, tangible impact on society.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/TicTacToe.jpg" alt="Tic-Tac-Toe" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=Tic-Tac-Toe'">
+                        <div class="project-number">01</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tic-Tac-Toe</h3>
+                        <p class="project-description">A Java-based Tic-Tac-Toe game featuring multiple player modes, AI opponents, and both classic 3x3 and extended NxN versions.</p>
+                        <div class="tech-tags"><span class="tag">Java</span><span class="tag">AI Strategy</span><span class="tag">OOP</span></div>
+                        <a href="https://github.com/krishaPatel-26/Tic-Tac-Toe" target="_blank" class="github-link">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/mastermind.jpg" alt="Mastermind" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=Mastermind'">
+                        <div class="project-number">02</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mastermind</h3>
+                        <p class="project-description">A Java-based console game that recreates the classic code-breaking puzzle with input validation and colored console output.</p>
+                        <div class="tech-tags"><span class="tag">Java</span><span class="tag">Console App</span><span class="tag">Game Dev</span></div>
+                        <a href="https://github.com/krishaPatel-26/Mastermind" target="_blank" class="github-link">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/pacman.jpg" alt="PacMan" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=PacMan'">
+                        <div class="project-number">03</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PacMan</h3>
+                        <p class="project-description">A Java-based recreation of the classic Pac-Man arcade game with smooth movement and increasing difficulty.</p>
+                        <div class="tech-tags"><span class="tag">Java</span><span class="tag">Game Dev</span><span class="tag">OOP</span></div>
+                        <a href="https://github.com/krishaPatel-26/PacMan" target="_blank" class="github-link">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/narrator.jpg" alt="Narrator" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=Narrator'">
+                        <div class="project-number">04</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Narrator</h3>
+                        <p class="project-description">Wearable device and mobile app for individuals with vision and hearing loss using computer vision technology.</p>
+                        <div class="tech-tags"><span class="tag">Wearable Tech</span><span class="tag">Mobile App</span><span class="tag">Assistive Tech</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/adventure-game.jpg" alt="Adventure Game" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=Adventure'">
+                        <div class="project-number">05</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Adventure Game</h3>
+                        <p class="project-description">C# text-based adventure game "Meet the Witch" with OOP architecture and inventory system.</p>
+                        <div class="tech-tags"><span class="tag">C#</span><span class="tag">OOP</span><span class="tag">Game Design</span></div>
+                        <a href="https://github.com/krishaPatel-26/AdventureGame" target="_blank" class="github-link">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/pong.jpg" alt="Pong" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=Pong'">
+                        <div class="project-number">06</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pong Game</h3>
+                        <p class="project-description">Modern Pong implementation with physics, dual scoring, and multiplayer modes.</p>
+                        <div class="tech-tags"><span class="tag">Python</span><span class="tag">Game Dev</span><span class="tag">Physics Engine</span></div>
+                        <a href="https://github.com/krishaPatel-26/Pong" target="_blank" class="github-link">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/spacer-block.jpg" alt="Thermal Stand" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=Thermal+Stand'">
+                        <div class="project-number">07</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SSR24 Thermal Stand</h3>
+                        <p class="project-description">Engineered thermal efficiency component for steel roofing systems using fibre-reinforced polymer.</p>
+                        <div class="tech-tags"><span class="tag">Engineering Design</span><span class="tag">CAD</span><span class="tag">Thermal Efficiency</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/luggage-system.jpg" alt="Luggage System" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=Luggage+System'">
+                        <div class="project-number">08</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Airport Luggage System</h3>
+                        <p class="project-description">Python-based automation for luggage sorting and passenger check-in management.</p>
+                        <div class="tech-tags"><span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Hardware Integration</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/house-3d.jpg" alt="3D House" class="project-img" onerror="this.src='https://via.placeholder.com/400x400?text=3D+House'">
+                        <div class="project-number">09</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">House 3D Model</h3>
+                        <p class="project-description">Residential house design using Autodesk Revit with BIM methodology.</p>
+                        <div class="tech-tags"><span class="tag">Autodesk Revit</span><span class="tag">BIM</span><span class="tag">3D Modeling</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="extracurriculars-section" id="extracurriculars">
+        <div class="container">
+            <h2 class="section-title">Extracurriculars Activities</h2>
+            <p class="section-subtitle">Proactive and engaged individual passionate about applying energy and skills beyond academic pursuits.</p>
+            <div class="extracurriculars-timeline">
+                <div class="extracurricular-item">
+                    <h3>Conferences Team Marketing Coordinator</h3>
+                    <p class="organization">Google Developers Group (McMaster University)</p>
+                    <p class="date">October 2025 - Present</p>
+                    <ul><li>Work with the Marketing Team to promote our hackathon and increase engagement</li></ul>
+                </div>
+                <div class="extracurricular-item">
+                    <h3>Volunteer</h3>
+                    <p class="organization">BAPS Charities</p>
+                    <p class="date">January 2017 - Present</p>
+                    <ul><li>Supported fundraising initiatives to advance breast cancer research efforts</li></ul>
+                </div>
+                <div class="extracurricular-item">
+                    <h3>Engineering Student</h3>
+                    <p class="organization">Behlen Industries LP</p>
+                    <p class="date">June 2025 - August 2025</p>
+                    <ul><li>Designed and rendered detailed roof and wall components using CAD software</li></ul>
+                </div>
+                <div class="extracurricular-item">
+                    <h3>Cashier</h3>
+                    <p class="organization">A&W</p>
+                    <p class="date">October 2022 - November 2023</p>
+                    <ul><li>Provided friendly customer service and processed financial transactions accurately</li></ul>
+                </div>
+                <div class="extracurricular-item">
+                    <h3>Team Member</h3>
+                    <p class="organization">STEM Club</p>
+                    <p class="date">September 2021 - June 2023</p>
+                    <ul><li>Lead the planning and execution of multiple student-focused STEM events</li></ul>
+                </div>
+                <div class="extracurricular-item">
+                    <h3>Community Member</h3>
+                    <p class="organization">Student Council</p>
+                    <p class="date">September 2021 - June 2024</p>
+                    <ul><li>Collaborated with school administration and student leaders to plan major events</li></ul>
+                </div>
+                <div class="extracurricular-item">
+                    <h3>KMN Speedsterz | Designer</h3>
+                    <p class="organization">F1 in Schools Club</p>
+                    <p class="date">September 2021 - June 2022</p>
+                    <ul><li>Collaborated with a multidisciplinary team to design and test a prototype race car</li></ul>
+                </div>
+                <div class="extracurricular-item award-item">
+                    <h3>🏆 Runner Up</h3>
+                    <p class="organization">Skills Manitoba - Architectural Technology & Design</p>
+                    <p class="date">2023 & 2024</p>
+                    <p class="award-text">Demonstrated advanced CAD/BIM proficiency in Autodesk Revit and AutoCAD during a 4-hour timed challenge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">A strong technical foundation supports my growth as a software engineer and fuels my passion for problem-solving.</p>
+            <p class="drag-hint">👆 Drag to explore more →</p>
+        </div>
+        <div class="tech-skills-wrapper">
+            <div class="tech-skills-carousel-container" id="techSkillsContainer">
+                <div class="tech-skills-carousel" id="techSkillsCarousel"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="section-title soft-skills-title">Soft Skills</h2>
+            <p class="section-subtitle">I believe that who you are is just as important as what you know — here are the strengths I bring to every environment.</p>
+            <p class="drag-hint">👆 Drag to explore more →</p>
+        </div>
+        <div class="soft-skills-wrapper">
+            <div class="soft-skills-carousel-container" id="softSkillsContainer">
+                <div class="soft-skills-carousel" id="softSkillsCarousel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-message">If you'd like to make an enquiry, please feel free to get in touch, and I will respond as soon as possible.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail"><span class="contact-icon">📞</span><p class="clickable-phone" id="copyPhoneBtn">(204) 922 - 4003</p></div>
+                        <div class="contact-detail"><span class="contact-icon">✉️</span><p class="clickable-email" id="copyEmailBtn">iamkrishapatel@gmail.com</p></div>
+                        <div class="contact-detail"><span class="contact-icon">🐙</span><a href="https://github.com/krishaPatel-26" target="_blank">GitHub</a></div>
+                        <div class="contact-detail"><span class="contact-icon">🔗</span><a href="https://www.linkedin.com/in/krisha-patel-720a02260/" target="_blank">LinkedIn</a></div>
+                    </div>
+                    <div class="resume-download-container">
+                        <button class="btn btn-primary" id="downloadResumeBtn">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Krisha Patel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
