@@ -202,7 +202,6 @@ function initCarousel(containerId, carouselId, data, createCard) {
     if (!carousel) return;
     
     carousel.innerHTML = '';
-    // Create 3 copies for seamless scrolling
     const copies = 3;
     for (let i = 0; i < copies; i++) {
         data.forEach(skill => carousel.appendChild(createCard(skill)));
@@ -216,9 +215,7 @@ function initCarousel(containerId, carouselId, data, createCard) {
     const setWidth = data.length * cardWidth;
     
     if (!isMobile) {
-        // DESKTOP: Auto-scroll
         container.scrollLeft = setWidth;
-        
         let scrollInterval;
         let isHovering = false;
         
@@ -227,25 +224,20 @@ function initCarousel(containerId, carouselId, data, createCard) {
             scrollInterval = setInterval(() => {
                 if (isHovering) return;
                 let currentScroll = container.scrollLeft;
-                
                 if (currentScroll >= setWidth * 2) {
                     container.scrollLeft = currentScroll - setWidth;
                     currentScroll = container.scrollLeft;
                 }
-                
                 container.scrollLeft = currentScroll + 1;
             }, 16);
         }
         
         container.addEventListener('mouseenter', () => { isHovering = true; });
         container.addEventListener('mouseleave', () => { isHovering = false; });
-        
         startAutoScroll();
     } else {
-        // MOBILE: Smooth drag scrolling
         let startX, scrollLeftPos;
         let isDragging = false;
-        
         container.style.cursor = 'grab';
         
         container.addEventListener('touchstart', (e) => {
@@ -268,7 +260,6 @@ function initCarousel(containerId, carouselId, data, createCard) {
             container.style.cursor = 'grab';
         });
         
-        // Mouse events for laptop touchpad
         container.addEventListener('mousedown', (e) => {
             isDragging = true;
             startX = e.clientX;
