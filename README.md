@@ -19,6 +19,6 @@
 
 ## Tech Stack
 
-- HTML5
+- HTML
 - CSS3
 - JavaScript
